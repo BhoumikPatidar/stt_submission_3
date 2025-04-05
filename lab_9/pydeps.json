@@ -1,0 +1,2515 @@
+{
+    "__main__": {
+        "bacon": 0,
+        "imports": [
+            "manimlib",
+            "manimlib.__main__",
+            "manimlib.animation",
+            "manimlib.animation.animation",
+            "manimlib.animation.composition",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.growing",
+            "manimlib.animation.indication",
+            "manimlib.animation.movement",
+            "manimlib.animation.numbers",
+            "manimlib.animation.rotation",
+            "manimlib.animation.specialized",
+            "manimlib.animation.transform",
+            "manimlib.animation.transform_matching_parts",
+            "manimlib.animation.update",
+            "manimlib.camera",
+            "manimlib.camera.camera",
+            "manimlib.camera.camera_frame",
+            "manimlib.config",
+            "manimlib.constants",
+            "manimlib.event_handler",
+            "manimlib.event_handler.event_dispatcher",
+            "manimlib.event_handler.event_listner",
+            "manimlib.event_handler.event_type",
+            "manimlib.extract_scene",
+            "manimlib.logger",
+            "manimlib.mobject",
+            "manimlib.mobject.boolean_ops",
+            "manimlib.mobject.changing",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.frame",
+            "manimlib.mobject.functions",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.interactive",
+            "manimlib.mobject.matrix",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.mobject_update_utils",
+            "manimlib.mobject.number_line",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.probability",
+            "manimlib.mobject.shape_matchers",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.old_tex_mobject",
+            "manimlib.mobject.svg.special_tex",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.three_dimensions",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.dot_cloud",
+            "manimlib.mobject.types.image_mobject",
+            "manimlib.mobject.types.point_cloud_mobject",
+            "manimlib.mobject.types.surface",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.mobject.value_tracker",
+            "manimlib.mobject.vector_field",
+            "manimlib.module_loader",
+            "manimlib.scene",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene",
+            "manimlib.scene.scene_embed",
+            "manimlib.scene.scene_file_writer",
+            "manimlib.shader_wrapper",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.cache",
+            "manimlib.utils.color",
+            "manimlib.utils.debug",
+            "manimlib.utils.dict_ops",
+            "manimlib.utils.directories",
+            "manimlib.utils.family_ops",
+            "manimlib.utils.file_ops",
+            "manimlib.utils.images",
+            "manimlib.utils.iterables",
+            "manimlib.utils.paths",
+            "manimlib.utils.rate_functions",
+            "manimlib.utils.shaders",
+            "manimlib.utils.simple_functions",
+            "manimlib.utils.sounds",
+            "manimlib.utils.space_ops",
+            "manimlib.utils.tex",
+            "manimlib.utils.tex_file_writing",
+            "manimlib.utils.tex_to_symbol_count",
+            "manimlib.window"
+        ],
+        "name": "__main__",
+        "path": null
+    },
+    "manimlib": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.__main__",
+            "manimlib.animation.animation",
+            "manimlib.animation.composition",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.growing",
+            "manimlib.animation.indication",
+            "manimlib.animation.movement",
+            "manimlib.animation.numbers",
+            "manimlib.animation.rotation",
+            "manimlib.animation.specialized",
+            "manimlib.animation.transform",
+            "manimlib.animation.transform_matching_parts",
+            "manimlib.animation.update",
+            "manimlib.camera.camera",
+            "manimlib.camera.camera_frame",
+            "manimlib.config",
+            "manimlib.constants",
+            "manimlib.event_handler",
+            "manimlib.event_handler.EVENT_DISPATCHER",
+            "manimlib.event_handler.event_dispatcher",
+            "manimlib.event_handler.event_listner",
+            "manimlib.extract_scene",
+            "manimlib.mobject.boolean_ops",
+            "manimlib.mobject.changing",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.frame",
+            "manimlib.mobject.functions",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.interactive",
+            "manimlib.mobject.matrix",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.mobject_update_utils",
+            "manimlib.mobject.number_line",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.probability",
+            "manimlib.mobject.shape_matchers",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.old_tex_mobject",
+            "manimlib.mobject.svg.special_tex",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.three_dimensions",
+            "manimlib.mobject.types.dot_cloud",
+            "manimlib.mobject.types.image_mobject",
+            "manimlib.mobject.types.point_cloud_mobject",
+            "manimlib.mobject.types.surface",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.mobject.value_tracker",
+            "manimlib.mobject.vector_field",
+            "manimlib.module_loader",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene",
+            "manimlib.scene.scene_embed",
+            "manimlib.scene.scene_file_writer",
+            "manimlib.shader_wrapper",
+            "manimlib.utils.bezier",
+            "manimlib.utils.cache",
+            "manimlib.utils.color",
+            "manimlib.utils.debug",
+            "manimlib.utils.directories",
+            "manimlib.utils.family_ops",
+            "manimlib.utils.file_ops",
+            "manimlib.utils.images",
+            "manimlib.utils.paths",
+            "manimlib.utils.rate_functions",
+            "manimlib.utils.shaders",
+            "manimlib.utils.simple_functions",
+            "manimlib.utils.sounds",
+            "manimlib.utils.space_ops",
+            "manimlib.utils.tex",
+            "manimlib.utils.tex_file_writing",
+            "manimlib.window"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.animation",
+            "manimlib.animation.composition",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.growing",
+            "manimlib.animation.indication",
+            "manimlib.animation.movement",
+            "manimlib.animation.numbers",
+            "manimlib.animation.rotation",
+            "manimlib.animation.specialized",
+            "manimlib.animation.transform",
+            "manimlib.animation.transform_matching_parts",
+            "manimlib.animation.update",
+            "manimlib.camera",
+            "manimlib.camera.camera",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.boolean_ops",
+            "manimlib.mobject.changing",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.frame",
+            "manimlib.mobject.functions",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.interactive",
+            "manimlib.mobject.matrix",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.mobject_update_utils",
+            "manimlib.mobject.number_line",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.probability",
+            "manimlib.mobject.shape_matchers",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.special_tex",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.three_dimensions",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.dot_cloud",
+            "manimlib.mobject.types.image_mobject",
+            "manimlib.mobject.types.point_cloud_mobject",
+            "manimlib.mobject.types.surface",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.mobject.value_tracker",
+            "manimlib.mobject.vector_field",
+            "manimlib.scene",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.cache",
+            "manimlib.utils.color",
+            "manimlib.utils.debug",
+            "manimlib.utils.dict_ops",
+            "manimlib.utils.directories",
+            "manimlib.utils.file_ops",
+            "manimlib.utils.images",
+            "manimlib.utils.iterables",
+            "manimlib.utils.paths",
+            "manimlib.utils.rate_functions",
+            "manimlib.utils.shaders",
+            "manimlib.utils.simple_functions",
+            "manimlib.utils.sounds",
+            "manimlib.utils.space_ops",
+            "manimlib.utils.tex",
+            "manimlib.window"
+        ],
+        "name": "manimlib",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/__init__.py"
+    },
+    "manimlib.__main__": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.config",
+            "manimlib.extract_scene",
+            "manimlib.utils",
+            "manimlib.utils.cache",
+            "manimlib.window"
+        ],
+        "name": "manimlib.__main__",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/__main__.py"
+    },
+    "manimlib.animation": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.composition",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.growing",
+            "manimlib.animation.indication",
+            "manimlib.animation.movement",
+            "manimlib.animation.numbers",
+            "manimlib.animation.rotation",
+            "manimlib.animation.specialized",
+            "manimlib.animation.transform",
+            "manimlib.animation.transform_matching_parts",
+            "manimlib.animation.update",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.mobject_update_utils",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.vector_field",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene",
+            "manimlib.scene.scene_embed"
+        ],
+        "name": "manimlib.animation",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/animation/__init__.py"
+    },
+    "manimlib.animation.animation": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.composition",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.indication",
+            "manimlib.animation.movement",
+            "manimlib.animation.numbers",
+            "manimlib.animation.rotation",
+            "manimlib.animation.transform",
+            "manimlib.animation.update",
+            "manimlib.mobject.mobject_update_utils",
+            "manimlib.mobject.svg.brace",
+            "manimlib.scene.scene"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.scene",
+            "manimlib.scene.scene",
+            "manimlib.utils",
+            "manimlib.utils.iterables",
+            "manimlib.utils.rate_functions",
+            "manimlib.utils.simple_functions"
+        ],
+        "name": "manimlib.animation.animation",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/animation/animation.py"
+    },
+    "manimlib.animation.composition": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.indication",
+            "manimlib.animation.specialized",
+            "manimlib.animation.transform_matching_parts",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.drawings"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.animation",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.scene",
+            "manimlib.scene.scene",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.iterables",
+            "manimlib.utils.simple_functions"
+        ],
+        "name": "manimlib.animation.composition",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/animation/composition.py"
+    },
+    "manimlib.animation.creation": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.indication"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.animation",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.scene",
+            "manimlib.scene.scene",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.rate_functions",
+            "manimlib.utils.simple_functions"
+        ],
+        "name": "manimlib.animation.creation",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/animation/creation.py"
+    },
+    "manimlib.animation.fading": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.indication",
+            "manimlib.animation.transform_matching_parts",
+            "manimlib.mobject.svg.brace",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene_embed"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.animation",
+            "manimlib.animation.transform",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.scene",
+            "manimlib.scene.scene",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.rate_functions"
+        ],
+        "name": "manimlib.animation.fading",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/animation/fading.py"
+    },
+    "manimlib.animation.growing": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.svg.brace"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.transform",
+            "manimlib.mobject",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.mobject",
+            "manimlib.typing"
+        ],
+        "name": "manimlib.animation.growing",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/animation/growing.py"
+    },
+    "manimlib.animation.indication": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.vector_field"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.animation",
+            "manimlib.animation.composition",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.movement",
+            "manimlib.animation.transform",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.shape_matchers",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.rate_functions"
+        ],
+        "name": "manimlib.animation.indication",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/animation/indication.py"
+    },
+    "manimlib.animation.movement": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.indication"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.animation",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.utils",
+            "manimlib.utils.rate_functions"
+        ],
+        "name": "manimlib.animation.movement",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/animation/movement.py"
+    },
+    "manimlib.animation.numbers": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.animation",
+            "manimlib.mobject",
+            "manimlib.mobject.numbers",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.simple_functions"
+        ],
+        "name": "manimlib.animation.numbers",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/animation/numbers.py"
+    },
+    "manimlib.animation.rotation": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.svg.drawings"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.animation",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.utils",
+            "manimlib.utils.rate_functions"
+        ],
+        "name": "manimlib.animation.rotation",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/animation/rotation.py"
+    },
+    "manimlib.animation.specialized": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.composition",
+            "manimlib.animation.transform",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing"
+        ],
+        "name": "manimlib.animation.specialized",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/animation/specialized.py"
+    },
+    "manimlib.animation.transform": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.fading",
+            "manimlib.animation.growing",
+            "manimlib.animation.indication",
+            "manimlib.animation.specialized",
+            "manimlib.animation.transform_matching_parts",
+            "manimlib.mobject.mobject"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.animation",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.scene",
+            "manimlib.scene.scene",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.paths"
+        ],
+        "name": "manimlib.animation.transform",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/animation/transform.py"
+    },
+    "manimlib.animation.transform_matching_parts": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.composition",
+            "manimlib.animation.fading",
+            "manimlib.animation.transform",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.scene",
+            "manimlib.scene.scene"
+        ],
+        "name": "manimlib.animation.transform_matching_parts",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/animation/transform_matching_parts.py"
+    },
+    "manimlib.animation.update": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.animation",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject"
+        ],
+        "name": "manimlib.animation.update",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/animation/update.py"
+    },
+    "manimlib.camera": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.camera.camera",
+            "manimlib.mobject.types.surface",
+            "manimlib.scene.scene",
+            "manimlib.scene.scene_file_writer"
+        ],
+        "name": "manimlib.camera",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/camera/__init__.py"
+    },
+    "manimlib.camera.camera": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.types.surface",
+            "manimlib.scene.scene",
+            "manimlib.scene.scene_file_writer"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.camera",
+            "manimlib.camera.camera_frame",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.color",
+            "manimlib.window"
+        ],
+        "name": "manimlib.camera.camera",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/camera/camera.py"
+    },
+    "manimlib.camera.camera_frame": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib.camera.camera",
+            "manimlib.scene.scene"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.simple_functions",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.camera.camera_frame",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/camera/camera_frame.py"
+    },
+    "manimlib.config": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib.__main__",
+            "manimlib.constants",
+            "manimlib.extract_scene",
+            "manimlib.mobject.shape_matchers",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.module_loader",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene",
+            "manimlib.scene.scene_embed",
+            "manimlib.shader_wrapper",
+            "manimlib.utils.directories",
+            "manimlib.utils.tex_file_writing"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.logger",
+            "manimlib.utils",
+            "manimlib.utils.dict_ops"
+        ],
+        "name": "manimlib.config",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/config.py"
+    },
+    "manimlib.constants": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.fading",
+            "manimlib.animation.indication",
+            "manimlib.animation.rotation",
+            "manimlib.animation.specialized",
+            "manimlib.animation.transform",
+            "manimlib.camera.camera",
+            "manimlib.camera.camera_frame",
+            "manimlib.mobject.changing",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.frame",
+            "manimlib.mobject.functions",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.interactive",
+            "manimlib.mobject.matrix",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.mobject_update_utils",
+            "manimlib.mobject.number_line",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.probability",
+            "manimlib.mobject.shape_matchers",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.old_tex_mobject",
+            "manimlib.mobject.svg.special_tex",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.three_dimensions",
+            "manimlib.mobject.types.dot_cloud",
+            "manimlib.mobject.types.image_mobject",
+            "manimlib.mobject.types.surface",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.mobject.vector_field",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene_embed",
+            "manimlib.utils.color",
+            "manimlib.utils.debug",
+            "manimlib.utils.paths",
+            "manimlib.utils.space_ops",
+            "manimlib.window"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.config",
+            "manimlib.typing"
+        ],
+        "name": "manimlib.constants",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/constants.py"
+    },
+    "manimlib.event_handler": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib.event_handler",
+            "manimlib.event_handler.EVENT_DISPATCHER",
+            "manimlib.event_handler.event_dispatcher",
+            "manimlib.event_handler.event_listner",
+            "manimlib.mobject.mobject",
+            "manimlib.scene.scene"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.event_handler",
+            "manimlib.event_handler.event_dispatcher"
+        ],
+        "name": "manimlib.event_handler",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/event_handler/__init__.py"
+    },
+    "manimlib.event_handler.EVENT_DISPATCHER": {
+        "bacon": 2,
+        "imported_by": [
+            "manimlib.mobject.mobject",
+            "manimlib.scene.scene"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.event_handler",
+            "manimlib.event_handler.event_listner",
+            "manimlib.event_handler.event_type"
+        ],
+        "name": "manimlib.event_handler.EVENT_DISPATCHER",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/event_handler/EVENT_DISPATCHER.py"
+    },
+    "manimlib.event_handler.event_dispatcher": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib.event_handler"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.event_handler",
+            "manimlib.event_handler.event_listner",
+            "manimlib.event_handler.event_type"
+        ],
+        "name": "manimlib.event_handler.event_dispatcher",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/event_handler/event_dispatcher.py"
+    },
+    "manimlib.event_handler.event_listner": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib.event_handler.EVENT_DISPATCHER",
+            "manimlib.event_handler.event_dispatcher",
+            "manimlib.mobject.mobject"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.event_handler",
+            "manimlib.event_handler.event_type",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject"
+        ],
+        "name": "manimlib.event_handler.event_listner",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/event_handler/event_listner.py"
+    },
+    "manimlib.event_handler.event_type": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib.event_handler.EVENT_DISPATCHER",
+            "manimlib.event_handler.event_dispatcher",
+            "manimlib.event_handler.event_listner",
+            "manimlib.mobject.mobject",
+            "manimlib.scene.scene"
+        ],
+        "name": "manimlib.event_handler.event_type",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/event_handler/event_type.py"
+    },
+    "manimlib.extract_scene": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib.__main__"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.config",
+            "manimlib.logger",
+            "manimlib.module_loader",
+            "manimlib.scene",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene"
+        ],
+        "name": "manimlib.extract_scene",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/extract_scene.py"
+    },
+    "manimlib.logger": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib.config",
+            "manimlib.extract_scene",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.module_loader",
+            "manimlib.scene.scene",
+            "manimlib.scene.scene_file_writer",
+            "manimlib.utils.bezier",
+            "manimlib.utils.debug",
+            "manimlib.utils.tex_file_writing"
+        ],
+        "name": "manimlib.logger",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/logger.py"
+    },
+    "manimlib.mobject": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.animation",
+            "manimlib.animation.composition",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.growing",
+            "manimlib.animation.indication",
+            "manimlib.animation.movement",
+            "manimlib.animation.numbers",
+            "manimlib.animation.rotation",
+            "manimlib.animation.specialized",
+            "manimlib.animation.transform",
+            "manimlib.animation.transform_matching_parts",
+            "manimlib.animation.update",
+            "manimlib.camera.camera",
+            "manimlib.camera.camera_frame",
+            "manimlib.event_handler.event_listner",
+            "manimlib.mobject.boolean_ops",
+            "manimlib.mobject.changing",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.frame",
+            "manimlib.mobject.functions",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.interactive",
+            "manimlib.mobject.matrix",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.mobject_update_utils",
+            "manimlib.mobject.number_line",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.probability",
+            "manimlib.mobject.shape_matchers",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.old_tex_mobject",
+            "manimlib.mobject.svg.special_tex",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.three_dimensions",
+            "manimlib.mobject.types.dot_cloud",
+            "manimlib.mobject.types.image_mobject",
+            "manimlib.mobject.types.point_cloud_mobject",
+            "manimlib.mobject.types.surface",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.mobject.value_tracker",
+            "manimlib.mobject.vector_field",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene",
+            "manimlib.scene.scene_embed",
+            "manimlib.scene.scene_file_writer",
+            "manimlib.utils.debug",
+            "manimlib.utils.family_ops"
+        ],
+        "name": "manimlib.mobject",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/__init__.py"
+    },
+    "manimlib.mobject.boolean_ops": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.svg.drawings"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject"
+        ],
+        "name": "manimlib.mobject.boolean_ops",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/boolean_ops.py"
+    },
+    "manimlib.mobject.changing": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.rate_functions"
+        ],
+        "name": "manimlib.mobject.changing",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/changing.py"
+    },
+    "manimlib.mobject.coordinate_systems": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.vector_field"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.functions",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.number_line",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.dot_cloud",
+            "manimlib.mobject.types.surface",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.dict_ops",
+            "manimlib.utils.simple_functions",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.mobject.coordinate_systems",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/coordinate_systems.py"
+    },
+    "manimlib.mobject.frame": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.scene.scene_embed"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.geometry",
+            "manimlib.typing"
+        ],
+        "name": "manimlib.mobject.frame",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/frame.py"
+    },
+    "manimlib.mobject.functions": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.coordinate_systems"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing"
+        ],
+        "name": "manimlib.mobject.functions",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/functions.py"
+    },
+    "manimlib.mobject.geometry": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.growing",
+            "manimlib.animation.indication",
+            "manimlib.animation.specialized",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.frame",
+            "manimlib.mobject.interactive",
+            "manimlib.mobject.number_line",
+            "manimlib.mobject.probability",
+            "manimlib.mobject.shape_matchers",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.special_tex",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.three_dimensions",
+            "manimlib.scene.interactive_scene"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.iterables",
+            "manimlib.utils.simple_functions",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.mobject.geometry",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/geometry.py"
+    },
+    "manimlib.mobject.interactive": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.mobject.value_tracker",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.color",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.mobject.interactive",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/interactive.py"
+    },
+    "manimlib.mobject.matrix": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing"
+        ],
+        "name": "manimlib.mobject.matrix",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/matrix.py"
+    },
+    "manimlib.mobject.mobject": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.animation",
+            "manimlib.animation.composition",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.growing",
+            "manimlib.animation.indication",
+            "manimlib.animation.movement",
+            "manimlib.animation.rotation",
+            "manimlib.animation.transform",
+            "manimlib.animation.transform_matching_parts",
+            "manimlib.animation.update",
+            "manimlib.camera.camera",
+            "manimlib.camera.camera_frame",
+            "manimlib.event_handler.event_listner",
+            "manimlib.mobject.changing",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.interactive",
+            "manimlib.mobject.mobject_update_utils",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.probability",
+            "manimlib.mobject.shape_matchers",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.three_dimensions",
+            "manimlib.mobject.types.dot_cloud",
+            "manimlib.mobject.types.image_mobject",
+            "manimlib.mobject.types.point_cloud_mobject",
+            "manimlib.mobject.types.surface",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.mobject.value_tracker",
+            "manimlib.mobject.vector_field",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene",
+            "manimlib.scene.scene_embed",
+            "manimlib.scene.scene_file_writer",
+            "manimlib.utils.debug",
+            "manimlib.utils.family_ops"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.transform",
+            "manimlib.constants",
+            "manimlib.event_handler",
+            "manimlib.event_handler.EVENT_DISPATCHER",
+            "manimlib.event_handler.event_listner",
+            "manimlib.event_handler.event_type",
+            "manimlib.logger",
+            "manimlib.mobject",
+            "manimlib.mobject.shape_matchers",
+            "manimlib.shader_wrapper",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.color",
+            "manimlib.utils.iterables",
+            "manimlib.utils.paths",
+            "manimlib.utils.shaders",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.mobject.mobject",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/mobject.py"
+    },
+    "manimlib.mobject.mobject_update_utils": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.animation",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.utils",
+            "manimlib.utils.simple_functions"
+        ],
+        "name": "manimlib.mobject.mobject_update_utils",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/mobject_update_utils.py"
+    },
+    "manimlib.mobject.number_line": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.coordinate_systems"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.dict_ops",
+            "manimlib.utils.simple_functions"
+        ],
+        "name": "manimlib.mobject.number_line",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/number_line.py"
+    },
+    "manimlib.mobject.numbers": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.numbers",
+            "manimlib.mobject.matrix",
+            "manimlib.mobject.number_line",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.scene.interactive_scene",
+            "manimlib.utils.debug"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.paths"
+        ],
+        "name": "manimlib.mobject.numbers",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/numbers.py"
+    },
+    "manimlib.mobject.probability": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.color",
+            "manimlib.utils.iterables"
+        ],
+        "name": "manimlib.mobject.probability",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/probability.py"
+    },
+    "manimlib.mobject.shape_matchers": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.indication",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.svg.drawings"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.config",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing"
+        ],
+        "name": "manimlib.mobject.shape_matchers",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/shape_matchers.py"
+    },
+    "manimlib.mobject.svg": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.creation",
+            "manimlib.animation.transform_matching_parts",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.interactive",
+            "manimlib.mobject.matrix",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.probability",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.old_tex_mobject",
+            "manimlib.mobject.svg.special_tex",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.scene.interactive_scene"
+        ],
+        "name": "manimlib.mobject.svg",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/svg/__init__.py"
+    },
+    "manimlib.mobject.svg.brace": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.probability"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.animation",
+            "manimlib.animation.composition",
+            "manimlib.animation.fading",
+            "manimlib.animation.growing",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.iterables",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.mobject.svg.brace",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/svg/brace.py"
+    },
+    "manimlib.mobject.svg.drawings": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.composition",
+            "manimlib.animation.rotation",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.boolean_ops",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.shape_matchers",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.special_tex",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.three_dimensions",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.iterables",
+            "manimlib.utils.rate_functions",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.mobject.svg.drawings",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/svg/drawings.py"
+    },
+    "manimlib.mobject.svg.old_tex_mobject": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.tex_file_writing"
+        ],
+        "name": "manimlib.mobject.svg.old_tex_mobject",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/svg/old_tex_mobject.py"
+    },
+    "manimlib.mobject.svg.special_tex": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.svg.drawings"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing"
+        ],
+        "name": "manimlib.mobject.svg.special_tex",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/svg/special_tex.py"
+    },
+    "manimlib.mobject.svg.string_mobject": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.creation",
+            "manimlib.animation.transform_matching_parts",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.svg.text_mobject"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.logger",
+            "manimlib.mobject",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.color"
+        ],
+        "name": "manimlib.mobject.svg.string_mobject",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/svg/string_mobject.py"
+    },
+    "manimlib.mobject.svg.svg_mobject": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.old_tex_mobject",
+            "manimlib.mobject.svg.string_mobject"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.logger",
+            "manimlib.mobject",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.images",
+            "manimlib.utils.iterables",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.mobject.svg.svg_mobject",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/svg/svg_mobject.py"
+    },
+    "manimlib.mobject.svg.tex_mobject": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.matrix",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.probability",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.special_tex",
+            "manimlib.scene.interactive_scene"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.logger",
+            "manimlib.mobject",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.color",
+            "manimlib.utils.tex",
+            "manimlib.utils.tex_file_writing"
+        ],
+        "name": "manimlib.mobject.svg.tex_mobject",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/svg/tex_mobject.py"
+    },
+    "manimlib.mobject.svg.text_mobject": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.interactive",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.scene.interactive_scene"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.config",
+            "manimlib.constants",
+            "manimlib.logger",
+            "manimlib.mobject",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.cache",
+            "manimlib.utils.color",
+            "manimlib.utils.simple_functions"
+        ],
+        "name": "manimlib.mobject.svg.text_mobject",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/svg/text_mobject.py"
+    },
+    "manimlib.mobject.three_dimensions": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.svg.drawings"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.surface",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.iterables",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.mobject.three_dimensions",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/three_dimensions.py"
+    },
+    "manimlib.mobject.types": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.composition",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.indication",
+            "manimlib.animation.movement",
+            "manimlib.animation.specialized",
+            "manimlib.animation.transform_matching_parts",
+            "manimlib.mobject.boolean_ops",
+            "manimlib.mobject.changing",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.functions",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.interactive",
+            "manimlib.mobject.matrix",
+            "manimlib.mobject.number_line",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.probability",
+            "manimlib.mobject.shape_matchers",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.old_tex_mobject",
+            "manimlib.mobject.svg.special_tex",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.three_dimensions",
+            "manimlib.mobject.types.dot_cloud",
+            "manimlib.mobject.vector_field",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene",
+            "manimlib.utils.debug"
+        ],
+        "name": "manimlib.mobject.types",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/types/__init__.py"
+    },
+    "manimlib.mobject.types.dot_cloud": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.scene.interactive_scene"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.point_cloud_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.iterables"
+        ],
+        "name": "manimlib.mobject.types.dot_cloud",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/types/dot_cloud.py"
+    },
+    "manimlib.mobject.types.image_mobject": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.images",
+            "manimlib.utils.iterables"
+        ],
+        "name": "manimlib.mobject.types.image_mobject",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/types/image_mobject.py"
+    },
+    "manimlib.mobject.types.point_cloud_mobject": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.types.dot_cloud"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.color",
+            "manimlib.utils.iterables"
+        ],
+        "name": "manimlib.mobject.types.point_cloud_mobject",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/types/point_cloud_mobject.py"
+    },
+    "manimlib.mobject.types.surface": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.three_dimensions"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.camera",
+            "manimlib.camera.camera",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.images",
+            "manimlib.utils.iterables",
+            "manimlib.utils.simple_functions",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.mobject.types.surface",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/types/surface.py"
+    },
+    "manimlib.mobject.types.vectorized_mobject": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.composition",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.indication",
+            "manimlib.animation.movement",
+            "manimlib.animation.specialized",
+            "manimlib.animation.transform_matching_parts",
+            "manimlib.mobject.boolean_ops",
+            "manimlib.mobject.changing",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.functions",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.interactive",
+            "manimlib.mobject.matrix",
+            "manimlib.mobject.number_line",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.probability",
+            "manimlib.mobject.shape_matchers",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.old_tex_mobject",
+            "manimlib.mobject.svg.special_tex",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.three_dimensions",
+            "manimlib.mobject.vector_field",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene",
+            "manimlib.utils.debug"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.shader_wrapper",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.color",
+            "manimlib.utils.iterables",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.mobject.types.vectorized_mobject",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/types/vectorized_mobject.py"
+    },
+    "manimlib.mobject.value_tracker": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.interactive"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.iterables"
+        ],
+        "name": "manimlib.mobject.value_tracker",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/value_tracker.py"
+    },
+    "manimlib.mobject.vector_field": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.indication",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.color",
+            "manimlib.utils.iterables",
+            "manimlib.utils.rate_functions",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.mobject.vector_field",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/mobject/vector_field.py"
+    },
+    "manimlib.module_loader": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib.extract_scene",
+            "manimlib.scene.scene_embed"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.config",
+            "manimlib.logger"
+        ],
+        "name": "manimlib.module_loader",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/module_loader.py"
+    },
+    "manimlib.scene": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.animation",
+            "manimlib.animation.composition",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.transform",
+            "manimlib.animation.transform_matching_parts",
+            "manimlib.extract_scene",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene",
+            "manimlib.scene.scene_embed",
+            "manimlib.scene.scene_file_writer",
+            "manimlib.window"
+        ],
+        "name": "manimlib.scene",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/scene/__init__.py"
+    },
+    "manimlib.scene.interactive_scene": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.extract_scene"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.fading",
+            "manimlib.config",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.svg",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.dot_cloud",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.scene",
+            "manimlib.scene.scene",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.family_ops",
+            "manimlib.utils.space_ops",
+            "manimlib.utils.tex_file_writing"
+        ],
+        "name": "manimlib.scene.interactive_scene",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/scene/interactive_scene.py"
+    },
+    "manimlib.scene.scene": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.animation",
+            "manimlib.animation.composition",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.transform",
+            "manimlib.animation.transform_matching_parts",
+            "manimlib.extract_scene",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene_embed",
+            "manimlib.scene.scene_file_writer",
+            "manimlib.window"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.animation",
+            "manimlib.camera",
+            "manimlib.camera.camera",
+            "manimlib.camera.camera_frame",
+            "manimlib.config",
+            "manimlib.event_handler",
+            "manimlib.event_handler.EVENT_DISPATCHER",
+            "manimlib.event_handler.event_type",
+            "manimlib.logger",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.scene",
+            "manimlib.scene.scene_embed",
+            "manimlib.scene.scene_file_writer",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.dict_ops",
+            "manimlib.utils.family_ops",
+            "manimlib.utils.iterables",
+            "manimlib.utils.sounds",
+            "manimlib.window"
+        ],
+        "name": "manimlib.scene.scene",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/scene/scene.py"
+    },
+    "manimlib.scene.scene_embed": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib.scene.scene"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.animation",
+            "manimlib.animation.fading",
+            "manimlib.config",
+            "manimlib.constants",
+            "manimlib.mobject",
+            "manimlib.mobject.frame",
+            "manimlib.mobject.mobject",
+            "manimlib.module_loader",
+            "manimlib.scene",
+            "manimlib.scene.scene"
+        ],
+        "name": "manimlib.scene.scene_embed",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/scene/scene_embed.py"
+    },
+    "manimlib.scene.scene_file_writer": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib.scene.scene"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.camera",
+            "manimlib.camera.camera",
+            "manimlib.logger",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.scene",
+            "manimlib.scene.scene",
+            "manimlib.utils",
+            "manimlib.utils.file_ops",
+            "manimlib.utils.sounds"
+        ],
+        "name": "manimlib.scene.scene_file_writer",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/scene/scene_file_writer.py"
+    },
+    "manimlib.shader_wrapper": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.types.vectorized_mobject"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.config",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.shaders"
+        ],
+        "name": "manimlib.shader_wrapper",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/shader_wrapper.py"
+    },
+    "manimlib.typing": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.growing",
+            "manimlib.animation.indication",
+            "manimlib.animation.specialized",
+            "manimlib.animation.transform",
+            "manimlib.camera.camera",
+            "manimlib.camera.camera_frame",
+            "manimlib.constants",
+            "manimlib.mobject.changing",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.frame",
+            "manimlib.mobject.functions",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.interactive",
+            "manimlib.mobject.matrix",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.number_line",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.probability",
+            "manimlib.mobject.shape_matchers",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.old_tex_mobject",
+            "manimlib.mobject.svg.special_tex",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.three_dimensions",
+            "manimlib.mobject.types.dot_cloud",
+            "manimlib.mobject.types.image_mobject",
+            "manimlib.mobject.types.point_cloud_mobject",
+            "manimlib.mobject.types.surface",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.mobject.value_tracker",
+            "manimlib.mobject.vector_field",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene",
+            "manimlib.shader_wrapper",
+            "manimlib.utils.bezier",
+            "manimlib.utils.color",
+            "manimlib.utils.paths",
+            "manimlib.utils.simple_functions",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.typing",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/typing.py"
+    },
+    "manimlib.utils": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.__main__",
+            "manimlib.animation.animation",
+            "manimlib.animation.composition",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.indication",
+            "manimlib.animation.movement",
+            "manimlib.animation.numbers",
+            "manimlib.animation.rotation",
+            "manimlib.animation.transform",
+            "manimlib.camera.camera",
+            "manimlib.camera.camera_frame",
+            "manimlib.config",
+            "manimlib.mobject.changing",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.interactive",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.mobject_update_utils",
+            "manimlib.mobject.number_line",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.probability",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.old_tex_mobject",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.three_dimensions",
+            "manimlib.mobject.types.dot_cloud",
+            "manimlib.mobject.types.image_mobject",
+            "manimlib.mobject.types.point_cloud_mobject",
+            "manimlib.mobject.types.surface",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.mobject.value_tracker",
+            "manimlib.mobject.vector_field",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene",
+            "manimlib.scene.scene_file_writer",
+            "manimlib.shader_wrapper",
+            "manimlib.utils.bezier",
+            "manimlib.utils.cache",
+            "manimlib.utils.color",
+            "manimlib.utils.directories",
+            "manimlib.utils.file_ops",
+            "manimlib.utils.images",
+            "manimlib.utils.paths",
+            "manimlib.utils.rate_functions",
+            "manimlib.utils.shaders",
+            "manimlib.utils.sounds",
+            "manimlib.utils.space_ops",
+            "manimlib.utils.tex",
+            "manimlib.utils.tex_file_writing"
+        ],
+        "name": "manimlib.utils",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/__init__.py"
+    },
+    "manimlib.utils.bezier": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.composition",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.indication",
+            "manimlib.animation.numbers",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.number_line",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.three_dimensions",
+            "manimlib.mobject.types.image_mobject",
+            "manimlib.mobject.types.surface",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.mobject.vector_field",
+            "manimlib.utils.color",
+            "manimlib.utils.paths",
+            "manimlib.utils.rate_functions"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.logger",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.simple_functions",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.utils.bezier",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/bezier.py"
+    },
+    "manimlib.utils.cache": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.__main__",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.utils.tex_file_writing"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.utils",
+            "manimlib.utils.directories",
+            "manimlib.utils.simple_functions"
+        ],
+        "name": "manimlib.utils.cache",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/cache.py"
+    },
+    "manimlib.utils.color": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.camera.camera",
+            "manimlib.mobject.interactive",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.probability",
+            "manimlib.mobject.svg.string_mobject",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.types.point_cloud_mobject",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.mobject.vector_field"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.iterables"
+        ],
+        "name": "manimlib.utils.color",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/color.py"
+    },
+    "manimlib.utils.debug": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.logger",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.numbers",
+            "manimlib.mobject.types",
+            "manimlib.mobject.types.vectorized_mobject"
+        ],
+        "name": "manimlib.utils.debug",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/debug.py"
+    },
+    "manimlib.utils.dict_ops": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.config",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.number_line",
+            "manimlib.scene.scene"
+        ],
+        "name": "manimlib.utils.dict_ops",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/dict_ops.py"
+    },
+    "manimlib.utils.directories": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.utils.cache",
+            "manimlib.utils.file_ops",
+            "manimlib.utils.images",
+            "manimlib.utils.shaders",
+            "manimlib.utils.sounds"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.config",
+            "manimlib.utils",
+            "manimlib.utils.file_ops"
+        ],
+        "name": "manimlib.utils.directories",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/directories.py"
+    },
+    "manimlib.utils.family_ops": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib.scene.interactive_scene",
+            "manimlib.scene.scene"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.mobject",
+            "manimlib.mobject.mobject"
+        ],
+        "name": "manimlib.utils.family_ops",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/family_ops.py"
+    },
+    "manimlib.utils.file_ops": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.scene.scene_file_writer",
+            "manimlib.utils.directories",
+            "manimlib.utils.images",
+            "manimlib.utils.shaders",
+            "manimlib.utils.sounds"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.utils",
+            "manimlib.utils.directories",
+            "manimlib.utils.simple_functions"
+        ],
+        "name": "manimlib.utils.file_ops",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/file_ops.py"
+    },
+    "manimlib.utils.images": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.types.image_mobject",
+            "manimlib.mobject.types.surface"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.utils",
+            "manimlib.utils.directories",
+            "manimlib.utils.file_ops"
+        ],
+        "name": "manimlib.utils.images",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/images.py"
+    },
+    "manimlib.utils.iterables": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.animation",
+            "manimlib.animation.composition",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.probability",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.three_dimensions",
+            "manimlib.mobject.types.dot_cloud",
+            "manimlib.mobject.types.image_mobject",
+            "manimlib.mobject.types.point_cloud_mobject",
+            "manimlib.mobject.types.surface",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.mobject.value_tracker",
+            "manimlib.mobject.vector_field",
+            "manimlib.scene.scene",
+            "manimlib.utils.color",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.utils.iterables",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/iterables.py"
+    },
+    "manimlib.utils.paths": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.transform",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.numbers"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.bezier",
+            "manimlib.utils.space_ops"
+        ],
+        "name": "manimlib.utils.paths",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/paths.py"
+    },
+    "manimlib.utils.rate_functions": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.animation",
+            "manimlib.animation.creation",
+            "manimlib.animation.fading",
+            "manimlib.animation.indication",
+            "manimlib.animation.movement",
+            "manimlib.animation.rotation",
+            "manimlib.mobject.changing",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.vector_field"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.utils",
+            "manimlib.utils.bezier"
+        ],
+        "name": "manimlib.utils.rate_functions",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/rate_functions.py"
+    },
+    "manimlib.utils.shaders": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.mobject",
+            "manimlib.shader_wrapper"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.utils",
+            "manimlib.utils.directories",
+            "manimlib.utils.file_ops"
+        ],
+        "name": "manimlib.utils.shaders",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/shaders.py"
+    },
+    "manimlib.utils.simple_functions": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.animation.animation",
+            "manimlib.animation.composition",
+            "manimlib.animation.creation",
+            "manimlib.animation.numbers",
+            "manimlib.camera.camera_frame",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.mobject_update_utils",
+            "manimlib.mobject.number_line",
+            "manimlib.mobject.svg.text_mobject",
+            "manimlib.mobject.types.surface",
+            "manimlib.utils.bezier",
+            "manimlib.utils.cache",
+            "manimlib.utils.file_ops",
+            "manimlib.utils.space_ops",
+            "manimlib.utils.tex_file_writing"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.typing"
+        ],
+        "name": "manimlib.utils.simple_functions",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/simple_functions.py"
+    },
+    "manimlib.utils.sounds": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.scene.scene",
+            "manimlib.scene.scene_file_writer"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.utils",
+            "manimlib.utils.directories",
+            "manimlib.utils.file_ops"
+        ],
+        "name": "manimlib.utils.sounds",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/sounds.py"
+    },
+    "manimlib.utils.space_ops": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.camera.camera_frame",
+            "manimlib.mobject.coordinate_systems",
+            "manimlib.mobject.geometry",
+            "manimlib.mobject.interactive",
+            "manimlib.mobject.mobject",
+            "manimlib.mobject.svg.brace",
+            "manimlib.mobject.svg.drawings",
+            "manimlib.mobject.svg.svg_mobject",
+            "manimlib.mobject.three_dimensions",
+            "manimlib.mobject.types.surface",
+            "manimlib.mobject.types.vectorized_mobject",
+            "manimlib.mobject.vector_field",
+            "manimlib.scene.interactive_scene",
+            "manimlib.utils.bezier",
+            "manimlib.utils.paths"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.typing",
+            "manimlib.utils",
+            "manimlib.utils.iterables",
+            "manimlib.utils.simple_functions"
+        ],
+        "name": "manimlib.utils.space_ops",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/space_ops.py"
+    },
+    "manimlib.utils.tex": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.mobject.svg.tex_mobject"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.utils",
+            "manimlib.utils.tex_to_symbol_count"
+        ],
+        "name": "manimlib.utils.tex",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/tex.py"
+    },
+    "manimlib.utils.tex_file_writing": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib.mobject.svg.old_tex_mobject",
+            "manimlib.mobject.svg.tex_mobject",
+            "manimlib.scene.interactive_scene"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.config",
+            "manimlib.logger",
+            "manimlib.utils",
+            "manimlib.utils.cache",
+            "manimlib.utils.simple_functions"
+        ],
+        "name": "manimlib.utils.tex_file_writing",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/tex_file_writing.py"
+    },
+    "manimlib.utils.tex_to_symbol_count": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib.utils.tex"
+        ],
+        "name": "manimlib.utils.tex_to_symbol_count",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/utils/tex_to_symbol_count.py"
+    },
+    "manimlib.window": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "manimlib",
+            "manimlib.__main__",
+            "manimlib.camera.camera",
+            "manimlib.scene.scene"
+        ],
+        "imports": [
+            "manimlib",
+            "manimlib.constants",
+            "manimlib.scene",
+            "manimlib.scene.scene"
+        ],
+        "name": "manimlib.window",
+        "path": "/Users/bhoumik/Documents/Acads/Courses/Semester VI/software_tools_and_tech/labs/lab_9/manim/manimlib/window.py"
+    }
+}

@@ -1,0 +1,442 @@
+Dependency Analysis Report
+========================================
+
+1. Fan-Out per Module:
+  __main__: 89
+  manimlib: 72
+  manimlib.__main__: 6
+  manimlib.animation: 0
+  manimlib.animation.animation: 9
+  manimlib.animation.composition: 13
+  manimlib.animation.creation: 16
+  manimlib.animation.fading: 15
+  manimlib.animation.growing: 7
+  manimlib.animation.indication: 19
+  manimlib.animation.movement: 9
+  manimlib.animation.numbers: 8
+  manimlib.animation.rotation: 8
+  manimlib.animation.specialized: 10
+  manimlib.animation.transform: 11
+  manimlib.animation.transform_matching_parts: 13
+  manimlib.animation.update: 5
+  manimlib.camera: 0
+  manimlib.camera.camera: 10
+  manimlib.camera.camera_frame: 8
+  manimlib.config: 4
+  manimlib.constants: 3
+  manimlib.event_handler: 3
+  manimlib.event_handler.EVENT_DISPATCHER: 4
+  manimlib.event_handler.event_dispatcher: 4
+  manimlib.event_handler.event_listner: 5
+  manimlib.event_handler.event_type: 0
+  manimlib.extract_scene: 7
+  manimlib.logger: 0
+  manimlib.mobject: 0
+  manimlib.mobject.boolean_ops: 4
+  manimlib.mobject.changing: 9
+  manimlib.mobject.coordinate_systems: 19
+  manimlib.mobject.frame: 5
+  manimlib.mobject.functions: 6
+  manimlib.mobject.geometry: 12
+  manimlib.mobject.interactive: 14
+  manimlib.mobject.matrix: 9
+  manimlib.mobject.mobject: 20
+  manimlib.mobject.mobject_update_utils: 8
+  manimlib.mobject.number_line: 12
+  manimlib.mobject.numbers: 13
+  manimlib.mobject.probability: 14
+  manimlib.mobject.shape_matchers: 9
+  manimlib.mobject.svg: 0
+  manimlib.mobject.svg.brace: 18
+  manimlib.mobject.svg.drawings: 23
+  manimlib.mobject.svg.old_tex_mobject: 10
+  manimlib.mobject.svg.special_tex: 9
+  manimlib.mobject.svg.string_mobject: 11
+  manimlib.mobject.svg.svg_mobject: 13
+  manimlib.mobject.svg.tex_mobject: 13
+  manimlib.mobject.svg.text_mobject: 14
+  manimlib.mobject.three_dimensions: 13
+  manimlib.mobject.types: 0
+  manimlib.mobject.types.dot_cloud: 9
+  manimlib.mobject.types.image_mobject: 9
+  manimlib.mobject.types.point_cloud_mobject: 7
+  manimlib.mobject.types.surface: 13
+  manimlib.mobject.types.vectorized_mobject: 11
+  manimlib.mobject.value_tracker: 6
+  manimlib.mobject.vector_field: 16
+  manimlib.module_loader: 3
+  manimlib.scene: 0
+  manimlib.scene.interactive_scene: 22
+  manimlib.scene.scene: 25
+  manimlib.scene.scene_embed: 11
+  manimlib.scene.scene_file_writer: 11
+  manimlib.shader_wrapper: 5
+  manimlib.typing: 0
+  manimlib.utils: 0
+  manimlib.utils.bezier: 6
+  manimlib.utils.cache: 4
+  manimlib.utils.color: 6
+  manimlib.utils.debug: 8
+  manimlib.utils.dict_ops: 0
+  manimlib.utils.directories: 4
+  manimlib.utils.family_ops: 3
+  manimlib.utils.file_ops: 4
+  manimlib.utils.images: 4
+  manimlib.utils.iterables: 0
+  manimlib.utils.paths: 6
+  manimlib.utils.rate_functions: 3
+  manimlib.utils.shaders: 4
+  manimlib.utils.simple_functions: 2
+  manimlib.utils.sounds: 4
+  manimlib.utils.space_ops: 6
+  manimlib.utils.tex: 3
+  manimlib.utils.tex_file_writing: 6
+  manimlib.utils.tex_to_symbol_count: 0
+  manimlib.window: 4
+
+2. Fan-In per Module:
+  __main__: 0
+  manimlib: 78
+  manimlib.__main__: 1
+  manimlib.animation: 22
+  manimlib.animation.animation: 14
+  manimlib.animation.composition: 7
+  manimlib.animation.creation: 3
+  manimlib.animation.fading: 7
+  manimlib.animation.growing: 3
+  manimlib.animation.indication: 3
+  manimlib.animation.movement: 3
+  manimlib.animation.numbers: 2
+  manimlib.animation.rotation: 3
+  manimlib.animation.specialized: 2
+  manimlib.animation.transform: 8
+  manimlib.animation.transform_matching_parts: 2
+  manimlib.animation.update: 2
+  manimlib.camera: 6
+  manimlib.camera.camera: 5
+  manimlib.camera.camera_frame: 3
+  manimlib.config: 13
+  manimlib.constants: 42
+  manimlib.event_handler: 7
+  manimlib.event_handler.EVENT_DISPATCHER: 2
+  manimlib.event_handler.event_dispatcher: 2
+  manimlib.event_handler.event_listner: 4
+  manimlib.event_handler.event_type: 6
+  manimlib.extract_scene: 2
+  manimlib.logger: 14
+  manimlib.mobject: 54
+  manimlib.mobject.boolean_ops: 3
+  manimlib.mobject.changing: 2
+  manimlib.mobject.coordinate_systems: 3
+  manimlib.mobject.frame: 3
+  manimlib.mobject.functions: 3
+  manimlib.mobject.geometry: 16
+  manimlib.mobject.interactive: 2
+  manimlib.mobject.matrix: 2
+  manimlib.mobject.mobject: 39
+  manimlib.mobject.mobject_update_utils: 2
+  manimlib.mobject.number_line: 3
+  manimlib.mobject.numbers: 9
+  manimlib.mobject.probability: 2
+  manimlib.mobject.shape_matchers: 5
+  manimlib.mobject.svg: 17
+  manimlib.mobject.svg.brace: 3
+  manimlib.mobject.svg.drawings: 2
+  manimlib.mobject.svg.old_tex_mobject: 1
+  manimlib.mobject.svg.special_tex: 3
+  manimlib.mobject.svg.string_mobject: 6
+  manimlib.mobject.svg.svg_mobject: 5
+  manimlib.mobject.svg.tex_mobject: 9
+  manimlib.mobject.svg.text_mobject: 7
+  manimlib.mobject.three_dimensions: 3
+  manimlib.mobject.types: 34
+  manimlib.mobject.types.dot_cloud: 4
+  manimlib.mobject.types.image_mobject: 2
+  manimlib.mobject.types.point_cloud_mobject: 3
+  manimlib.mobject.types.surface: 4
+  manimlib.mobject.types.vectorized_mobject: 33
+  manimlib.mobject.value_tracker: 3
+  manimlib.mobject.vector_field: 2
+  manimlib.module_loader: 3
+  manimlib.scene: 14
+  manimlib.scene.interactive_scene: 3
+  manimlib.scene.scene: 13
+  manimlib.scene.scene_embed: 2
+  manimlib.scene.scene_file_writer: 2
+  manimlib.shader_wrapper: 3
+  manimlib.typing: 47
+  manimlib.utils: 56
+  manimlib.utils.bezier: 22
+  manimlib.utils.cache: 5
+  manimlib.utils.color: 12
+  manimlib.utils.debug: 2
+  manimlib.utils.dict_ops: 6
+  manimlib.utils.directories: 7
+  manimlib.utils.family_ops: 3
+  manimlib.utils.file_ops: 7
+  manimlib.utils.images: 5
+  manimlib.utils.iterables: 21
+  manimlib.utils.paths: 5
+  manimlib.utils.rate_functions: 11
+  manimlib.utils.shaders: 4
+  manimlib.utils.simple_functions: 18
+  manimlib.utils.sounds: 4
+  manimlib.utils.space_ops: 17
+  manimlib.utils.tex: 3
+  manimlib.utils.tex_file_writing: 4
+  manimlib.utils.tex_to_symbol_count: 2
+  manimlib.window: 5
+
+3. Highly Coupled Modules (Fan-Out >= 5):
+  __main__: 89
+  manimlib: 72
+  manimlib.__main__: 6
+  manimlib.animation.animation: 9
+  manimlib.animation.composition: 13
+  manimlib.animation.creation: 16
+  manimlib.animation.fading: 15
+  manimlib.animation.growing: 7
+  manimlib.animation.indication: 19
+  manimlib.animation.movement: 9
+  manimlib.animation.numbers: 8
+  manimlib.animation.rotation: 8
+  manimlib.animation.specialized: 10
+  manimlib.animation.transform: 11
+  manimlib.animation.transform_matching_parts: 13
+  manimlib.animation.update: 5
+  manimlib.camera.camera: 10
+  manimlib.camera.camera_frame: 8
+  manimlib.event_handler.event_listner: 5
+  manimlib.extract_scene: 7
+  manimlib.mobject.changing: 9
+  manimlib.mobject.coordinate_systems: 19
+  manimlib.mobject.frame: 5
+  manimlib.mobject.functions: 6
+  manimlib.mobject.geometry: 12
+  manimlib.mobject.interactive: 14
+  manimlib.mobject.matrix: 9
+  manimlib.mobject.mobject: 20
+  manimlib.mobject.mobject_update_utils: 8
+  manimlib.mobject.number_line: 12
+  manimlib.mobject.numbers: 13
+  manimlib.mobject.probability: 14
+  manimlib.mobject.shape_matchers: 9
+  manimlib.mobject.svg.brace: 18
+  manimlib.mobject.svg.drawings: 23
+  manimlib.mobject.svg.old_tex_mobject: 10
+  manimlib.mobject.svg.special_tex: 9
+  manimlib.mobject.svg.string_mobject: 11
+  manimlib.mobject.svg.svg_mobject: 13
+  manimlib.mobject.svg.tex_mobject: 13
+  manimlib.mobject.svg.text_mobject: 14
+  manimlib.mobject.three_dimensions: 13
+  manimlib.mobject.types.dot_cloud: 9
+  manimlib.mobject.types.image_mobject: 9
+  manimlib.mobject.types.point_cloud_mobject: 7
+  manimlib.mobject.types.surface: 13
+  manimlib.mobject.types.vectorized_mobject: 11
+  manimlib.mobject.value_tracker: 6
+  manimlib.mobject.vector_field: 16
+  manimlib.scene.interactive_scene: 22
+  manimlib.scene.scene: 25
+  manimlib.scene.scene_embed: 11
+  manimlib.scene.scene_file_writer: 11
+  manimlib.shader_wrapper: 5
+  manimlib.utils.bezier: 6
+  manimlib.utils.color: 6
+  manimlib.utils.debug: 8
+  manimlib.utils.paths: 6
+  manimlib.utils.space_ops: 6
+  manimlib.utils.tex_file_writing: 6
+
+4. Cyclic Dependencies Detected:
+  manimlib -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib
+  manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.animation.animation
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.constants -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.constants -> manimlib.config -> manimlib
+  manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.mobject.mobject
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib
+  manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.animation.animation
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.camera.camera -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.camera.camera -> manimlib.camera.camera_frame -> manimlib
+  manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.camera.camera -> manimlib.camera.camera_frame -> manimlib.mobject.mobject
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.camera.camera -> manimlib.camera.camera_frame -> manimlib.utils.simple_functions -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.camera.camera -> manimlib.camera.camera_frame -> manimlib.utils.space_ops -> manimlib
+  manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.camera.camera -> manimlib.mobject.mobject
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.camera.camera -> manimlib.utils.color -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.camera.camera -> manimlib.utils.color -> manimlib.utils.bezier -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.camera.camera -> manimlib.window -> manimlib
+  manimlib.scene.scene -> manimlib.camera.camera -> manimlib.window -> manimlib.scene.scene
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.event_handler -> manimlib
+  manimlib.event_handler -> manimlib.event_handler
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.event_handler -> manimlib.event_handler.event_dispatcher -> manimlib
+  manimlib.event_handler -> manimlib.event_handler.event_dispatcher -> manimlib.event_handler
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.event_handler -> manimlib.event_handler.event_dispatcher -> manimlib.event_handler.event_listner -> manimlib
+  manimlib.event_handler -> manimlib.event_handler.event_dispatcher -> manimlib.event_handler.event_listner -> manimlib.event_handler
+  manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.event_handler -> manimlib.event_handler.event_dispatcher -> manimlib.event_handler.event_listner -> manimlib.mobject.mobject
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.event_handler.EVENT_DISPATCHER -> manimlib
+  manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.mobject.mobject
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.mobject.types.vectorized_mobject -> manimlib
+  manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.mobject.types.vectorized_mobject -> manimlib.mobject.mobject
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.mobject.types.vectorized_mobject -> manimlib.shader_wrapper -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.mobject.types.vectorized_mobject -> manimlib.shader_wrapper -> manimlib.utils.shaders -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.mobject.types.vectorized_mobject -> manimlib.shader_wrapper -> manimlib.utils.shaders -> manimlib.utils.directories -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.mobject.types.vectorized_mobject -> manimlib.shader_wrapper -> manimlib.utils.shaders -> manimlib.utils.directories -> manimlib.utils.file_ops -> manimlib
+  manimlib.utils.directories -> manimlib.utils.file_ops -> manimlib.utils.directories
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.scene.scene_embed -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.scene.scene_embed -> manimlib.animation.fading -> manimlib
+  manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.scene.scene_embed -> manimlib.animation.fading -> manimlib.animation.animation
+  manimlib.animation.transform -> manimlib.scene.scene -> manimlib.scene.scene_embed -> manimlib.animation.fading -> manimlib.animation.transform
+  manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.scene.scene_embed -> manimlib.animation.fading -> manimlib.mobject.mobject
+  manimlib.scene.scene -> manimlib.scene.scene_embed -> manimlib.animation.fading -> manimlib.scene.scene
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.scene.scene_embed -> manimlib.animation.fading -> manimlib.utils.rate_functions -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.scene.scene_embed -> manimlib.mobject.frame -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.scene.scene_embed -> manimlib.mobject.frame -> manimlib.mobject.geometry -> manimlib
+  manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.scene.scene_embed -> manimlib.mobject.frame -> manimlib.mobject.geometry -> manimlib.mobject.mobject
+  manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.scene.scene_embed -> manimlib.mobject.mobject
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.scene.scene_embed -> manimlib.module_loader -> manimlib
+  manimlib.scene.scene -> manimlib.scene.scene_embed -> manimlib.scene.scene
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.scene.scene_file_writer -> manimlib
+  manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.scene.scene_file_writer -> manimlib.mobject.mobject
+  manimlib.scene.scene -> manimlib.scene.scene_file_writer -> manimlib.scene.scene
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.scene.scene_file_writer -> manimlib.utils.sounds -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.utils.family_ops -> manimlib
+  manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.scene.scene -> manimlib.utils.family_ops -> manimlib.mobject.mobject
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.animation.transform -> manimlib.utils.paths -> manimlib
+  manimlib -> manimlib.animation.animation -> manimlib.mobject.mobject -> manimlib.mobject.shape_matchers -> manimlib
+  manimlib.mobject.mobject -> manimlib.mobject.shape_matchers -> manimlib.mobject.mobject
+  manimlib -> manimlib.animation.composition -> manimlib
+  manimlib -> manimlib.animation.creation -> manimlib
+  manimlib -> manimlib.animation.creation -> manimlib.mobject.svg.string_mobject -> manimlib
+  manimlib -> manimlib.animation.creation -> manimlib.mobject.svg.string_mobject -> manimlib.mobject.svg.svg_mobject -> manimlib
+  manimlib -> manimlib.animation.creation -> manimlib.mobject.svg.string_mobject -> manimlib.mobject.svg.svg_mobject -> manimlib.utils.images -> manimlib
+  manimlib -> manimlib.animation.growing -> manimlib
+  manimlib -> manimlib.animation.indication -> manimlib
+  manimlib -> manimlib.animation.indication -> manimlib.animation.movement -> manimlib
+  manimlib -> manimlib.animation.numbers -> manimlib
+  manimlib -> manimlib.animation.numbers -> manimlib.mobject.numbers -> manimlib
+  manimlib -> manimlib.animation.numbers -> manimlib.mobject.numbers -> manimlib.mobject.svg.tex_mobject -> manimlib
+  manimlib.mobject.numbers -> manimlib.mobject.svg.tex_mobject -> manimlib.mobject.numbers
+  manimlib -> manimlib.animation.numbers -> manimlib.mobject.numbers -> manimlib.mobject.svg.tex_mobject -> manimlib.utils.tex -> manimlib
+  manimlib -> manimlib.animation.numbers -> manimlib.mobject.numbers -> manimlib.mobject.svg.tex_mobject -> manimlib.utils.tex_file_writing -> manimlib
+  manimlib -> manimlib.animation.numbers -> manimlib.mobject.numbers -> manimlib.mobject.svg.tex_mobject -> manimlib.utils.tex_file_writing -> manimlib.utils.cache -> manimlib
+  manimlib -> manimlib.animation.numbers -> manimlib.mobject.numbers -> manimlib.mobject.svg.text_mobject -> manimlib
+  manimlib -> manimlib.animation.rotation -> manimlib
+  manimlib -> manimlib.animation.specialized -> manimlib
+  manimlib -> manimlib.animation.transform_matching_parts -> manimlib
+  manimlib -> manimlib.animation.update -> manimlib
+  manimlib -> manimlib.mobject.boolean_ops -> manimlib
+  manimlib -> manimlib.mobject.changing -> manimlib
+  manimlib -> manimlib.mobject.coordinate_systems -> manimlib
+  manimlib -> manimlib.mobject.coordinate_systems -> manimlib.mobject.functions -> manimlib
+  manimlib -> manimlib.mobject.coordinate_systems -> manimlib.mobject.number_line -> manimlib
+  manimlib -> manimlib.mobject.coordinate_systems -> manimlib.mobject.types.dot_cloud -> manimlib
+  manimlib -> manimlib.mobject.coordinate_systems -> manimlib.mobject.types.dot_cloud -> manimlib.mobject.types.point_cloud_mobject -> manimlib
+  manimlib -> manimlib.mobject.coordinate_systems -> manimlib.mobject.types.surface -> manimlib
+  manimlib -> manimlib.mobject.interactive -> manimlib
+  manimlib -> manimlib.mobject.interactive -> manimlib.mobject.value_tracker -> manimlib
+  manimlib -> manimlib.mobject.matrix -> manimlib
+  manimlib -> manimlib.mobject.mobject_update_utils -> manimlib
+  manimlib -> manimlib.mobject.probability -> manimlib
+  manimlib -> manimlib.mobject.probability -> manimlib.mobject.svg.brace -> manimlib
+  manimlib -> manimlib.mobject.svg.drawings -> manimlib
+  manimlib -> manimlib.mobject.svg.drawings -> manimlib.mobject.svg.special_tex -> manimlib
+  manimlib -> manimlib.mobject.svg.drawings -> manimlib.mobject.three_dimensions -> manimlib
+  manimlib -> manimlib.mobject.types.image_mobject -> manimlib
+  manimlib -> manimlib.mobject.vector_field -> manimlib
+  manimlib -> manimlib.scene.interactive_scene -> manimlib
+  manimlib -> manimlib.utils.debug -> manimlib
+  Note: Cycles may affect maintainability due to unexpected side effects.
+
+5. Unused/Disconnected Modules:
+  __main__
+
+6. Dependency Depth Assessment:
+  Maximum Dependency Depth (Longest Path): 21
+  Root Modules (with no incoming dependencies):
+    __main__
+
+7. Dependency Impact Assessment:
+  Core Module: manimlib
+  Modules impacted if the core module is changed:
+    __main__
+    manimlib
+    manimlib.__main__
+    manimlib.animation.animation
+    manimlib.animation.composition
+    manimlib.animation.creation
+    manimlib.animation.fading
+    manimlib.animation.growing
+    manimlib.animation.indication
+    manimlib.animation.movement
+    manimlib.animation.numbers
+    manimlib.animation.rotation
+    manimlib.animation.specialized
+    manimlib.animation.transform
+    manimlib.animation.transform_matching_parts
+    manimlib.animation.update
+    manimlib.camera.camera
+    manimlib.camera.camera_frame
+    manimlib.config
+    manimlib.constants
+    manimlib.event_handler
+    manimlib.event_handler.EVENT_DISPATCHER
+    manimlib.event_handler.event_dispatcher
+    manimlib.event_handler.event_listner
+    manimlib.extract_scene
+    manimlib.mobject.boolean_ops
+    manimlib.mobject.changing
+    manimlib.mobject.coordinate_systems
+    manimlib.mobject.frame
+    manimlib.mobject.functions
+    manimlib.mobject.geometry
+    manimlib.mobject.interactive
+    manimlib.mobject.matrix
+    manimlib.mobject.mobject
+    manimlib.mobject.mobject_update_utils
+    manimlib.mobject.number_line
+    manimlib.mobject.numbers
+    manimlib.mobject.probability
+    manimlib.mobject.shape_matchers
+    manimlib.mobject.svg.brace
+    manimlib.mobject.svg.drawings
+    manimlib.mobject.svg.old_tex_mobject
+    manimlib.mobject.svg.special_tex
+    manimlib.mobject.svg.string_mobject
+    manimlib.mobject.svg.svg_mobject
+    manimlib.mobject.svg.tex_mobject
+    manimlib.mobject.svg.text_mobject
+    manimlib.mobject.three_dimensions
+    manimlib.mobject.types.dot_cloud
+    manimlib.mobject.types.image_mobject
+    manimlib.mobject.types.point_cloud_mobject
+    manimlib.mobject.types.surface
+    manimlib.mobject.types.vectorized_mobject
+    manimlib.mobject.value_tracker
+    manimlib.mobject.vector_field
+    manimlib.module_loader
+    manimlib.scene.interactive_scene
+    manimlib.scene.scene
+    manimlib.scene.scene_embed
+    manimlib.scene.scene_file_writer
+    manimlib.shader_wrapper
+    manimlib.utils.bezier
+    manimlib.utils.cache
+    manimlib.utils.color
+    manimlib.utils.debug
+    manimlib.utils.directories
+    manimlib.utils.family_ops
+    manimlib.utils.file_ops
+    manimlib.utils.images
+    manimlib.utils.paths
+    manimlib.utils.rate_functions
+    manimlib.utils.shaders
+    manimlib.utils.simple_functions
+    manimlib.utils.sounds
+    manimlib.utils.space_ops
+    manimlib.utils.tex
+    manimlib.utils.tex_file_writing
+    manimlib.window
